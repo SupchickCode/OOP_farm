@@ -11,8 +11,15 @@ require_once("Chicken.php");
 
 $stable = new Stable();
 
+/**
+ * Method `get_all_animals` returns `array` 
+ * i use `foreach statement` to display it on the screen
+ */
 foreach ($stable->get_all_animals() as $key => $animal) {
-    echo $animal . "<br>";
+    echo $animal;
 };
 
-echo $stable->get_all_products();
+/**
+ * Display sum
+ */
+echo $stable->get_products_sum();
