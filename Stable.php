@@ -1,25 +1,26 @@
 <?php
 
 class Stable
-{   
+{
     /**
      * $animals : keep how much animals in the stable right now;
      */
     public array $animals;
 
-    
+
     public function __construct()
-    {   
-       $this->add_many_cows_and_chikens(10,20);
+    {
+        $this->add_many_cows_and_chikens(10, 20);
     }
 
-    
+
     /**
      * Add many animals in the stable;
      * @param cows how much cows do you need ?
      * @param chikens how much chikens do you need ?
      */
-    protected function add_many_cows_and_chikens(int $cows, int $chickens){
+    protected function add_many_cows_and_chikens(int $cows, int $chickens)
+    {
         for ($i = 0; $i < $cows; $i++) {
             $cow = new Cow();
             $this->add_animal($cow);

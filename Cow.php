@@ -8,12 +8,13 @@ class Cow extends Animal
         $this->type = __CLASS__;
     }
 
-    
-     /**
+
+    /**
      * Class Cow returns milk 8-12 liters
      * @return int 
      */
-    public function get_product(){
-        return rand(8,12);
+    public function get_product(): int
+    {
+        return rand(8, 12);
     }
 }

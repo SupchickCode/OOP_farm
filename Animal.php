@@ -8,13 +8,13 @@ abstract class Animal
     public string $id;
     public string $type;
 
-    
+
     /**
      * Depending on the type of animal, I get the desired product
      * @return int
      */
     abstract protected function get_product();
-    
+
 
     /**
      * @return string

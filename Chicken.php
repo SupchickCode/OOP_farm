@@ -8,12 +8,13 @@ class Chicken extends Animal
         $this->type = __CLASS__;
     }
 
-    
+
     /**
      * Class Chicken returns egg
      * @return int 
      */
-    public function get_product(){
-        return rand(0,1);
+    public function get_product(): int
+    {
+        return rand(0, 1);
     }
 }
